@@ -11,9 +11,9 @@ namespace Minirechner
         {
             Console.WriteLine("Dies ist ein kleiner Rechner!");
             Console.WriteLine("Zahl 1:");
-            Console.ReadLine();
+            int ersteZahl = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Zahl 2:");
-            Console.ReadLine();
+            int zweiteZahl=Convert.ToInt16(Console.ReadLine());
 
             
         }
