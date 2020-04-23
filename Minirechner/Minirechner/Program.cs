@@ -18,7 +18,7 @@ namespace Minirechner
 
             Program.Addieren(ersteZahl, zweiteZahl);
             Program.Subtrahieren(ersteZahl, zweiteZahl);
-
+            Program.Multiplikation(ersteZahl, zweiteZahl);
             Console.ReadKey();
         }
 
@@ -36,6 +36,13 @@ namespace Minirechner
             int Summe = ersteZahl + zweiteZahl;
             Console.WriteLine("Die Summe beträgt:{0}", Summe);
             return Summe;
+        }
+
+        static int Multiplikation(int ersteZahl, int zweiteZahl)
+        {
+            int Produkt = ersteZahl * zweiteZahl;
+            Console.WriteLine("\nDas Produkt beträgt:{0}", Produkt);
+            return Produkt;
         }
     }
 
