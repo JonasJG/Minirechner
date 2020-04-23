@@ -19,6 +19,7 @@ namespace Minirechner
             Program.Addieren(ersteZahl, zweiteZahl);
             Program.Subtrahieren(ersteZahl, zweiteZahl);
             Program.Multiplikation(ersteZahl, zweiteZahl);
+            Program.Division(ersteZahl, zweiteZahl);
             Console.ReadKey();
         }
 
@@ -43,6 +44,13 @@ namespace Minirechner
             int Produkt = ersteZahl * zweiteZahl;
             Console.WriteLine("\nDas Produkt beträgt:{0}", Produkt);
             return Produkt;
+        }
+
+        static int Division(int ersteZahl, int zweiteZahl)
+        {
+            int Quotient = ersteZahl / zweiteZahl;
+            Console.WriteLine("\nDer Quotient beträgt:{0}", Quotient);
+            return Quotient;
         }
     }
 
