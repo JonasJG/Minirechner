@@ -16,18 +16,21 @@ namespace Minirechner
             int zweiteZahl=Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("\n\n");
 
-            Program.Addieren(ersteZahl, zweiteZahl);
-           
+            
+            Program.Subtrahieren(ersteZahl, zweiteZahl);
 
             Console.ReadKey();
         }
 
-        static int Addieren(int ersteZahl, int zweiteZahl)
+        
+
+        static int Subtrahieren(int ersteZahl, int zweiteZahl)
         {
-            int Summe = ersteZahl + zweiteZahl;
-            Console.WriteLine("Die Summe beträgt:{0}", Summe);
-            return Summe;
+            int Differenz = ersteZahl - zweiteZahl;
+            Console.WriteLine("\nDie Differenz beträgt:{0}", Differenz);
+            return Differenz;
         }
+
 
     }
 
